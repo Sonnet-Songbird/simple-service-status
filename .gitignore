@@ -1,0 +1,9 @@
+node_modules/
+.next/
+data/
+*.sqlite3
+*.sqlite3-*
+.env
+npm-debug.log*
+*.log
+tsconfig.tsbuildinfo

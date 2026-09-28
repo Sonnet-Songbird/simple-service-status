@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${APP_PORT:-4100}:3000"
+    volumes:
+      - notice-data:/app/data
+    environment:
+      NOTICE_DB_PATH: /app/data/notice.sqlite3
+
+volumes:
+  notice-data:
